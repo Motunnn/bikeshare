@@ -1,4 +1,4 @@
-The reseources and references used for this project include: 
+The resources and references used for this project include: 
 
 1. https://www.w3resource.com/python/python-print-statement.php - How to return a variable and string
 2. https://pandas.pydata.org/docs/reference/api/pandas.Series.dt.month_name.html - How to use dt.
