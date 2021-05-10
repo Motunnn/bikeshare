@@ -262,6 +262,29 @@ def user_stats(df):
     print('-'*40)
 
 
+# In[9]:
+
+
+
+    
+def view_data_function(df):
+    view_data = input('\nWould you like to view 5 rows of individual trip data? Enter yes or no\n')
+    if view_data.lower() == 'yes':
+        start_loc = 0
+        while True:
+            print(df.iloc[start_loc: start_loc+5])
+            start_loc += 5
+            view_data = input("Do you wish to continue?: ").lower()
+            if view_data.lower() == 'no':
+                break
+
+
+# In[ ]:
+
+
+
+
+
 # In[ ]:
 
 
@@ -274,6 +297,7 @@ def main():
         station_stats(df)
         trip_duration_stats(df)
         user_stats(df)
+        view_data_function(df)
        
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
